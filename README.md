@@ -14,7 +14,6 @@ I used 1-D systolic array for convolution calculation and BRAM for storing data.
   - ```conv_apb.v``` : APB interface
   - ```conv_module.v``` : Convolution layer module
   - ```conv_top.v``` : Top module
-  - ```main.bit``` : Generated bitstream for FPGA
 
 - ```FPGA test result``` : FPGA test result (The python codes belong to Computer Architecture Group @ SNU ECE)
   - ```all_layer_test.ipynb``` : All layer test result
