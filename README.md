@@ -4,6 +4,7 @@ This is my Digital Systems Design class project code for building a CNN accelera
 ## Project Overview
 ![image](https://user-images.githubusercontent.com/26453618/147485934-f37f5cbb-1687-48a1-bde2-5f181d25f320.png)
 [Source : Computer Architecture Group @ SNU ECE]
+
 We designed CNN accelerator for modified VGG16 architecture on above image. CIFAR-10 dataset is used for image source. For convolution layer, kernel size is 3x3 and stride is 1. Zero-padding of size 1 is included to maintain the same output image width and height.
 We used APB protocol for the control path and AXI VDMA for data read/write between FPGA and CPU.
 I used 1-D systolic array for convolution calculation and BRAM for storing data.
