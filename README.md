@@ -7,6 +7,7 @@ This is my Digital Systems Design class project code for building a CNN accelera
 
 We designed CNN accelerator for modified VGG16 architecture on above image. CIFAR-10 dataset is used for image source. For convolution layer, kernel size is 3x3 and stride is 1. Zero-padding of size 1 is included to maintain the same output image width and height.
 We used APB protocol for the control path and AXI VDMA for data read/write between FPGA and CPU.
+The testbench I used for Vivado simulation is Input channel size=3, Ouput channel size=8, Feature length=8 dataset. VDMA sends and receives data as lines of 32bit words.
 I used 1-D systolic array for convolution calculation and BRAM for storing data.
 
 ## Directory Structure
@@ -14,7 +15,6 @@ I used 1-D systolic array for convolution calculation and BRAM for storing data.
   - ```conv_apb.v``` : APB interface
   - ```conv_module.v``` : Convolution layer module
   - ```conv_top.v``` : Top module
-  - ```main.bit``` : Generated bitstream for FPGA
 
 - ```waveforms``` : Vivado waveforms for testbench
   - ```Main.jpg```: General overview
