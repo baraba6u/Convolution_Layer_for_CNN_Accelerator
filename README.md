@@ -16,6 +16,10 @@ I used 1-D systolic array for convolution calculation and BRAM for storing data.
   - ```conv_module.v``` : Convolution layer module
   - ```conv_top.v``` : Top module
 
+- ```FPGA test result``` : FPGA test result (The python codes belong to Computer Architecture Group @ SNU ECE)
+  - ```all_layer_test.pdf```: All layer test result
+  - ```single_layer_test.pdf```: Single layer test result
+
 - ```waveforms``` : Vivado waveforms for testbench
   - ```Main.jpg```: General overview
   - ```Systolic Array.jpg```: Systolic array calculation waveform
